@@ -11,7 +11,7 @@ Fill address detail and start payment
 
 Purchase product
     [Arguments]    ${name}    ${surname}    ${address}    ${phone}    ${email}
-    home_page.Open cart
+    cart_page.Open cart
     cart_feature.Fill address detail and start payment    
     ...    ${name}    
     ...    ${surname}    

@@ -1,4 +1,7 @@
 *** Keywords ***
+Open cart
+    common.Click element when ready    ${common_locator.shopping_cart_icon}
+    
 Input name 
     [Arguments]    ${name} 
     common.Input text    ${cart_locator.input_txt_name}    ${name}

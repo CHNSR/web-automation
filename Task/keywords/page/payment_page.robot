@@ -25,7 +25,4 @@ Click confirm payment
     common.Click element when ready    ${payment_locator.confirm_payment_btn}
 
 Click continue shopping
-    SeleniumLibrary.wait until element is visible    ${payment_locator.div_of_orderdetail}
-    ${Get order information}=    Get Text    ${payment_locator.div_of_orderdetail}
-    SeleniumLibrary.click element    ${payment_locator.continue_to_shoping}
-    SeleniumLibrary.log to console    ${Get order information}
+    common.Click popup when ready    ${payment_locator.continue_to_shoping}

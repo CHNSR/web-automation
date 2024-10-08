@@ -20,4 +20,4 @@ Input email
     common.Input text    ${cart_locator.input_txt_email}    ${email}
 
 Click pay button
-    SeleniumLibrary.Click element    ${cart_locator.pay_btn}
+    common.Click element when ready     ${cart_locator.pay_btn}

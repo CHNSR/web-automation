@@ -4,7 +4,7 @@ Open website
 
 Click element when ready 
     [Arguments]    ${click_path}
-    SeleniumLibraly.wait until element is visible    ${click_path}    
+    SeleniumLibraly.wait until element is visible    ${click_path}  ${time.waiting_time} 
     SeleniumLibraly.click element    ${click_path}
 
 Get last user form yaml

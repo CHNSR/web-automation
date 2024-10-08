@@ -1,5 +1,4 @@
-*** Settings ***
-Resource    ${CURIRD}../resources/import.robot    
+
 *** Keywords ***
 Search product in search bar
     [Arguments]    ${searchtxt}

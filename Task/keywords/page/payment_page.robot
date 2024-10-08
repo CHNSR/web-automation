@@ -1,5 +1,4 @@
-*** Settings ***
-Resource    ./import.robot
+
 *** Keywords ***
 Select payment method
     Click Element    ${payment_locator.cradite_radio}

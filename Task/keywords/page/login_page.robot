@@ -1,5 +1,4 @@
-*** Settings ***
-Resource    ./import.robot
+
 
 *** Keywords ***
 Fill email

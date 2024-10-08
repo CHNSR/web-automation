@@ -1,6 +1,6 @@
 *** Settings ***
 Resource    ${CURDIR}../keywords/page/import.robot
-Test Setup common.Open websites
+Test Setup     common.Open websites
 Test Teardown   SeleniumLibrary.close browser
 
 *** Test Cases ***

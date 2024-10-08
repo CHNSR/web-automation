@@ -1,5 +1,4 @@
-*** Settings ***
-Resource    ${CUIRDIR}../resources/import.robot
+
 
 *** Keywords ***
 Input name 

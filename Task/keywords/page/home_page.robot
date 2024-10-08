@@ -10,5 +10,5 @@ Add product to cart
 Open cart
     common.Click element when ready    ${common_locator.shopping_cart_icon}
 
-Click search button
+Click search product button
     common.click element when ready    ${home_locator.search_btn}

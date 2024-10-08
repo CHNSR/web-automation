@@ -10,7 +10,7 @@ Click element when ready
 Get last user form yaml
     Evaluate  createUniqueID.get_latest_user_from_yaml()
 
-Input text
+Input text 
     [Argument]    ${path}     ${text}
     SeleniumLibraly.input text    ${path}    ${text}
 

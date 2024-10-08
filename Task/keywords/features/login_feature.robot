@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    ${CUIRDIR}../page/import.robot
+Resource    ${CURDIR}/../../resources/import.robot
 *** Keywords ***
 Login
     [Arguments]    ${email}    ${password}
@@ -7,4 +7,4 @@ Login
     login_page.Fill email    ${email}
     login_page.Fill password    ${password}
     login_page.Click login button 
-    common.Wait and click    ${login_locator.ok_btn}    ${login_locator.ok_btn}
+    common.Click element when ready    ${login_locator.ok_btn}    ${login_locator.ok_btn}

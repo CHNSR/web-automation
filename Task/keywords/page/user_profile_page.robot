@@ -7,4 +7,4 @@ Get order form pending payment table
     Log To Console    OrderId form Pending payment: ${GetOrderID}
 
 Log out
-    common.Wait and click    ${user_profile_locator.logout_btn} 
+    common.Click element when ready    ${user_profile_locator.logout_btn} 

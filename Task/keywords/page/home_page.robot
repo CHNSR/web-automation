@@ -5,10 +5,10 @@ Input text in search bar
     
 Add product to cart
     [Arguments]    ${add_to_cart_button}
-    common.Wait and click    ${add_to_cart_button}
+    common.Click element when ready    ${add_to_cart_button}
 
 Open cart
-    common.Wait and click    ${common_locator.shopping_cart_icon}
+    common.Click element when ready    ${common_locator.shopping_cart_icon}
 
 Click search button
-    common.wait and click    ${home_locator.search_btn}
+    common.click element when ready    ${home_locator.search_btn}

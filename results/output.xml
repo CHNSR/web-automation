@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.12.7 on win32)" generated="2024-10-08T13:54:10.778462" rpa="false" schemaversion="5">
+<suite id="s1" name="Web-Automation" source="C:\Users\chano\Documents\GitHub\web-automation">
+<suite id="s1-s1" name="Task" source="C:\Users\chano\Documents\GitHub\web-automation\Task">
+<suite id="s1-s1-s1" name="Testcases" source="C:\Users\chano\Documents\GitHub\web-automation\Task\testcases">
+<suite id="s1-s1-s1-s1" name="Tc01" source="C:\Users\chano\Documents\GitHub\web-automation\Task\testcases\tc01.robot">
+<test id="s1-s1-s1-s1-t1" name="Test Log in" line="14">
+<kw name="common.Open websites" type="SETUP">
+<msg time="2024-10-08T13:54:10.842899" level="FAIL">No keyword with name 'common.Open websites' found.</msg>
+<status status="FAIL" start="2024-10-08T13:54:10.842899" elapsed="0.000000">No keyword with name 'common.Open websites' found.</status>
+</kw>
+<kw name="SeleniumLibrary.close browser" type="TEARDOWN">
+<msg time="2024-10-08T13:54:10.842899" level="FAIL">No keyword with name 'SeleniumLibrary.close browser' found.</msg>
+<status status="FAIL" start="2024-10-08T13:54:10.842899" elapsed="0.000000">No keyword with name 'SeleniumLibrary.close browser' found.</status>
+</kw>
+<tag>test_2</tag>
+<status status="FAIL" start="2024-10-08T13:54:10.842899" elapsed="0.000000">Setup failed:
+No keyword with name 'common.Open websites' found.
+
+Also teardown failed:
+No keyword with name 'SeleniumLibrary.close browser' found.</status>
+</test>
+<status status="FAIL" start="2024-10-08T13:54:10.837889" elapsed="0.025521"/>
+</suite>
+<status status="FAIL" start="2024-10-08T13:54:10.837889" elapsed="0.029631"/>
+</suite>
+<status status="FAIL" start="2024-10-08T13:54:10.826916" elapsed="0.040604"/>
+</suite>
+<status status="FAIL" start="2024-10-08T13:54:10.811289" elapsed="0.061575"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">test_2</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Web-Automation">Web-Automation</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Task">Web-Automation.Task</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Testcases">Web-Automation.Task.Testcases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1-s1" name="Tc01">Web-Automation.Task.Testcases.Tc01</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-10-08T13:54:10.837889" level="ERROR">Error in file 'C:\Users\chano\Documents\GitHub\web-automation\Task\testcases\tc01.robot' on line 2: Resource file 'C:\Users\chano\Documents\GitHub\web-automation\Task\testcases..\keywords\page\import.robot' does not exist.</msg>
+</errors>
+</robot>

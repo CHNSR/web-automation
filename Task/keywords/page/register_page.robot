@@ -13,7 +13,7 @@ Input confirm password
 
 Click register button
     Click Element   ${register_locator.submit_btn}
-    common.Wait and click    ${register_locator.ok_btn}    ${register_locator.ok_btn}
+    common.Click element when ready    ${register_locator.ok_btn}    ${register_locator.ok_btn}
 
 Gen new data to register
     Evaluate    createUniqueID.add_new_user_to_yaml()

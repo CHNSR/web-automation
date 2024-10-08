@@ -3,7 +3,7 @@ Resource    ./import.robot
 
 *** Keywords ***
 Open website
-    SeleniumLibrary.Open Browser    ${uat.url}    gc
+    SeleniumLibrary.open browser    ${uat.url}    gc
 
 Click user icon
     SeleniumLibrary.Wait Until Element Is Visible    ${common_locator.user_icon}

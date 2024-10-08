@@ -1,5 +1,3 @@
-
-
 *** Keywords ***
 Fill email
     [Arguments]    ${email}

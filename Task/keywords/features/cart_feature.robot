@@ -13,7 +13,7 @@ Fill address detail and start payment
 
 Purchase product
     [Arguments]    ${name}    ${surname}    ${address}    ${phone}    ${email}
-    common.Open cart
+    home_page.Open cart
     Fill address detail and start payment    
     ...    ${name}    
     ...    ${surname}    
@@ -21,4 +21,5 @@ Purchase product
     ...    ${phone}    
     ...    ${email}
     payment_page.Select payment method
+    payment_page.Click next
     

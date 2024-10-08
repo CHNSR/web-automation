@@ -1,5 +1,3 @@
-
-
 *** Keywords ***
 Input name 
     [Arguments]    ${name} 

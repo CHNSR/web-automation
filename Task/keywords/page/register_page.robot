@@ -1,5 +1,4 @@
 *** Keywords ***
-
 Input email
     [Arguments]    ${email}    
     common.Input text    ${register_locator.username_container}    ${email}

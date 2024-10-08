@@ -1,8 +1,9 @@
-
 *** Keywords ***
 Select payment method
-    Click Element    ${payment_locator.cradite_radio}
-    SeleniumLibrary.Click Element    ${payment_locator.next_btn}
+    common.Wait and click    ${payment_locator.cradite_radio}
+
+Click next
+    common.Wait and click    ${payment_locator.next_btn}
 
 Add card number 
     [Arguments]    ${creditcard}    
@@ -22,10 +23,12 @@ Add card holder name
 
 Click confirm payment
     common.Wait and click    ${payment_locator.confirm_payment_btn}
+
+Click ok  
     common.Wait and click    ${payment_locator.ok_btn}    
 
 Click continue shopping
-    SeleniumLibrary.Wait until element is visible    ${payment_locator.div_of_orderdetail}
+    SeleniumLibrary.wait until element is visible    ${payment_locator.div_of_orderdetail}
     ${Get order information}=    Get Text    ${payment_locator.div_of_orderdetail}
-    Click Element    ${payment_locator.continue_to_shoping}
-    Log To Console    ${Get order information}
+    SeleniumLibrary.click element    ${payment_locator.continue_to_shoping}
+    SeleniumLibrary.log to console    ${Get order information}

@@ -1,7 +1,6 @@
 *** Keywords ***
-Show orderid
-    Wait Until Element Is Visible    ${user_profile_locator.pending_lebel}
-    Scroll Element Into View    ${user_profile_locator.table}
+Show orderid to view
+    common.Wait and scroll   ${user_profile_locator.table}
     
 Get order form pending payment table
     ${GetOrderID}=    Get Text    ${user_profile_locator.orderId}

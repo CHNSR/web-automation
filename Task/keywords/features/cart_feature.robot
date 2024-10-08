@@ -1,9 +1,9 @@
 *** Settings ***
-Resource    ../page/import.robot
+Resource    ${CUIRDIR}../page/import.robot
 *** Keywords ***
 Fill address detail and start payment
     [Arguments]    ${name}    ${surname}    ${address}    ${phone}    ${email}
-    Wait Until Element Is Visible    ${cart_locator.input_box} 
+    Seleium.wait until element is visible    ${cart_locator.input_box} 
     cart_page.Input name     ${name}
     cart_page.Input surName    ${surname}
     cart_page.Input address     ${address}
@@ -13,12 +13,12 @@ Fill address detail and start payment
 
 Purchase product
     [Arguments]    ${name}    ${surname}    ${address}    ${phone}    ${email}
-    common.Open Cart
+    common.Open cart
     Fill address detail and start payment    
     ...    ${name}    
     ...    ${surname}    
     ...    ${address}    
     ...    ${phone}    
     ...    ${email}
-    payment_page.Select Payment Method
+    payment_page.Select payment method
     

@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    ../page/import.robot
+Resource    ${CUIRDIR}../page/import.robot
 *** Keywords ***
 Login
     [Arguments]    ${email}    ${password}

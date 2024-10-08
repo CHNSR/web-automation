@@ -1,26 +1,26 @@
 *** Settings ***
-Resource    ./import.robot
+Resource    ${CUIRDIR}../resources/import.robot
 
 *** Keywords ***
 Input name 
     [Arguments]    ${name} 
-    SeleniumLibrary.Input Text    ${cart_locator.input_txt_name}    ${name}
+    common.Input text    ${cart_locator.input_txt_name}    ${name}
 
 Input surname 
     [Arguments]    ${surname}    
-    SeleniumLibrary.Input Text    ${cart_locator.input_txt_surName}    ${surname}
+    common.Input text    ${cart_locator.input_txt_surName}    ${surname}
 
 Input address 
     [Arguments]     ${address}
-    SeleniumLibrary.Input Text    ${cart_locator.input_txt_address}    ${address}
+    common.Input text    ${cart_locator.input_txt_address}      ${address}
 
 Input phone 
-    [Arguments]    ${phone}
-    SeleniumLibrary.Input Text    ${cart_locator.input_txt_phone}     ${phone} 
+    [Arguments]    ${phone} 
+    common.Input text    ${cart_locator.input_txt_phone}    ${phone}
 
 Input email 
     [Arguments]    ${email}
-    SeleniumLibrary.Input Text    ${cart_locator.input_txt_email}     ${email} 
+    common.Input text    ${cart_locator.input_txt_email}    ${email}
 
 Click pay button
-    SeleniumLibrary.Click Button    ${cart_locator.pay_btn}
+    SeleniumLibrary.Click element    ${cart_locator.pay_btn}

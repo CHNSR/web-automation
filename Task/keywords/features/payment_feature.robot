@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    ../page/import.robot
+Resource    ${CUIRDIR}../page/import.robot
 *** Keywords ***
 Add credit card and payment
     [Arguments]    ${creditcard}    ${exp}    ${cvc}    ${name}

@@ -1,8 +1,4 @@
-*** Settings ***
-Resource    ./import.robot
-
 *** Keywords ***
-
 Show orderid
     Wait Until Element Is Visible    ${user_profile_locator.pending_lebel}
     Scroll Element Into View    ${user_profile_locator.table}
@@ -12,4 +8,4 @@ Get order form pending payment table
     Log To Console    OrderId form Pending payment: ${GetOrderID}
 
 Log out
-    Click Button    ${user_profile_locator.logout_btn} 
+    common.Wait and click    ${user_profile_locator.logout_btn} 

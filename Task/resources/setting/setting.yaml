@@ -1,4 +1,5 @@
 uat:  
   url:  https://training-platform.doppio-tech.com/
+  brower: gc
 sit:
   url : https://doppee.doppio-tech.com  

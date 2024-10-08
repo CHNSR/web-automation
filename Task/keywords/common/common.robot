@@ -1,6 +1,6 @@
 *** Keywords ***
 Open website
-    SeleniumLibrary.open browser    ${uat.url}    ${browser}
+    SeleniumLibrary.open browser    ${uat.url}    ${uat.browser}
 
 Click user icon
     SeleniumLibrary.Wait Until Element Is Visible    ${common_locator.user_icon}

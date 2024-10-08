@@ -21,3 +21,6 @@ Wait and scroll to view
     [Argument]    ${path}
     SeleniumLibraly.wait until element is visible    ${path}
     SeleniumLibraly.scroll element into view    ${path}
+
+Click popup when ready
+    common.Click element when ready     ${common_locator.ok_btn}

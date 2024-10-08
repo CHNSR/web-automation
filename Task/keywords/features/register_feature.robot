@@ -7,4 +7,5 @@ Register
     register_page.Input password    ${password}
     register_page.Input confirm password    ${confirm_password}
     register_page.Click register button
+    common.Click popup when ready
     common.Click user icon

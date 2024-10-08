@@ -24,9 +24,6 @@ Add card holder name
 Click confirm payment
     common.Click element when ready    ${payment_locator.confirm_payment_btn}
 
-Click ok  
-    common.Click element when ready    ${payment_locator.ok_btn}    
-
 Click continue shopping
     SeleniumLibrary.wait until element is visible    ${payment_locator.div_of_orderdetail}
     ${Get order information}=    Get Text    ${payment_locator.div_of_orderdetail}

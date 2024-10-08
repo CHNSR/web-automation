@@ -6,5 +6,5 @@ Add credit card and payment
     payment_page.Add cvc    ${cvc} 
     payment_page.Add card holder name    ${name} 
     payment_page.Click confirm payment
-    payment_page.Click ok
+    common.Click popup when ready
     payment_page.Click continue shopping

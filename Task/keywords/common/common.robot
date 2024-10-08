@@ -24,3 +24,6 @@ Wait and scroll to view
 
 Click popup when ready
     common.Click element when ready     ${common_locator.ok_btn}
+
+Gen new data to register
+    Evaluate    createUniqueID.add_new_user_to_yaml()

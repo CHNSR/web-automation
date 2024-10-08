@@ -1,7 +1,7 @@
 *** Keywords ***
 Fill address detail and start payment
     [Arguments]    ${name}    ${surname}    ${address}    ${phone}    ${email}
-    Seleium.wait until element is visible    ${cart_locator.input_box} 
+    Seleium.wait until element is visible    ${cart_locator.input_box}      {time.waiting_time}
     cart_page.Input name     ${name}
     cart_page.Input surName    ${surname}
     cart_page.Input address     ${address}
@@ -12,12 +12,12 @@ Fill address detail and start payment
 Purchase product
     [Arguments]    ${name}    ${surname}    ${address}    ${phone}    ${email}
     home_page.Open cart
-    Fill address detail and start payment    
+    cart_feature.Fill address detail and start payment    
     ...    ${name}    
     ...    ${surname}    
     ...    ${address}    
     ...    ${phone}    
     ...    ${email}
-    payment_page.Select payment method
+    payment_page.Select cradit card in payment method
     payment_page.Click next
     

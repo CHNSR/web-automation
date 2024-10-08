@@ -1,6 +1,6 @@
 *** Keywords ***
-Select payment method
-    common.Click element when ready    ${payment_locator.cradite_radio}
+Select cradit card in payment method
+    common.Click element when ready    ${payment_locator.cradit_radio}
 
 Click next
     common.Click element when ready    ${payment_locator.next_btn}

@@ -1,5 +1,5 @@
 *** Keywords ***
-Show orderid to view
+Show order id to view
     common.Wait and scroll   ${user_profile_locator.table}
     
 Get order form pending payment table

@@ -6,7 +6,7 @@ Test Teardown   SeleniumLibrary.close browser
 *** Test Cases ***
 Test Register 
     [Tags]    test_1
-    register_page.Gen new data to register
+    common.Gen new data to register
     &{Userdata}=    common.Get last user form yaml   
     register_feature.Register    ${Userdata.username}    ${Userdata.password}    ${Userdata.confirmpassword} 
     user_profile_page.Log out

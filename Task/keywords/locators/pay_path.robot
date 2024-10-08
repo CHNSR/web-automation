@@ -1,6 +1,6 @@
 *** Variables ***
 ${payment_locator.next_btn}    //button/span[text()='Next']
-${payment_locator.cradite_radio}    //span[text()='Credit Card']
+${payment_locator.cradit_radio}    //span[text()='Credit Card']
 ${payment_locator.card_number_container}    xpath=//input[@placeholder='Valid Card Number']
 ${payment_locator.exp_container}    xpath=//input[@placeholder='MM/YYYY']
 ${payment_locator.cvc_container}    xpath=//input[@placeholder='CVC']

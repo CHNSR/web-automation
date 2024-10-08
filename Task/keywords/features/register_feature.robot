@@ -1,6 +1,3 @@
-*** Settings ***
-Resource    ${CURDIR}/../../resources/import.robot
-
 *** Keywords ***
 Register
     [Arguments]    ${email}    ${password}    ${confirm_password}

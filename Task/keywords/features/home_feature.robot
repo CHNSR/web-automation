@@ -1,6 +1,3 @@
-*** Settings ***
-Resource    ${CURDIR}/../../resources/import.robot
-
 *** Keywords ***
 Search and add product to cart
     [Arguments]    ${searchtxt}    ${product_name}    

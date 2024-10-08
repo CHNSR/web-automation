@@ -12,7 +12,7 @@ Get last user form yaml
 
 Input text 
     [Argument]    ${path}     ${text}
-    SeleniumLibraly.input text    ${path}    ${text}
+    SeleniumLibraly.Input text    ${path}    ${text}
 
 Click user icon
     common.Click element when ready    ${common_locator.user_icon}

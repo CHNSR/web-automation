@@ -1,5 +1,3 @@
-*** Settings ***
-Resource    ${CURDIR}/../../resources/import.robot
 *** Keywords ***
 Login
     [Arguments]    ${email}    ${password}

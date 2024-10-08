@@ -1,5 +1,3 @@
-*** Settings ***
-Resource    ${CURDIR}/../../resources/import.robot
 *** Keywords ***
 Fill address detail and start payment
     [Arguments]    ${name}    ${surname}    ${address}    ${phone}    ${email}

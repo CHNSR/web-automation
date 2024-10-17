@@ -8,7 +8,7 @@ Click element when ready
     SeleniumLibraly.click element    ${click_path}
 
 Get last user form yaml
-    Evaluate  createUniqueID.get_latest_user_from_yaml()
+    BuiltIn.Evaluate  createUniqueID.get_latest_user_from_yaml()
 
 Input text 
     [Argument]    ${path}     ${text}

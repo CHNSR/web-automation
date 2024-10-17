@@ -1,7 +1,9 @@
 *** Settings ***
 Library    SeleniumLibrary
+Libraay    BuiltIn
 Library    ${CURDIR}/../resources/testdata/createUniqueID.py
 
+#Data
 Variables  ${CURDIR}/../resources/testdata/testdata.yaml
 Variables  ${CURDIR}/../resources/setting/setting.yaml
 

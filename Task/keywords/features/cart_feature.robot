@@ -1,7 +1,7 @@
 *** Keywords ***
 Fill address detail and start payment
     [Arguments]    ${name}    ${surname}    ${address}    ${phone}    ${email}
-    Seleium.wait until element is visible    ${cart_locator.input_box}      {time.waiting_time}
+    Seleium.wait until element is visible    ${cart_locator.input_box}      ${time.waiting_time}
     cart_page.Input name     ${name}
     cart_page.Input surName    ${surname}
     cart_page.Input address     ${address}
